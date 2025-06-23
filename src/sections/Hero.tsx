@@ -62,12 +62,12 @@ export default function Hero() {
                 cursor: `url(${cursorYouImage.src}), auto`,
             }}
         >
-            <div className="container">
+            <div className="container relative">
                 <motion.div
                     ref={leftDesignScope}
                     initial={{ opacity: 0, y: 100, x: -100 }}
                     drag
-                    className="absolute -left-32 top-72 hidden lg:block"
+                    className="absolute -left-72 top-52 hidden lg:block"
                 >
                     <Image
                         src={designExample1Image}
@@ -78,7 +78,7 @@ export default function Hero() {
                 <motion.div
                     ref={leftPointerScope}
                     initial={{ opacity: 0, y: 100, x: -200 }}
-                    className="absolute left-56 top-[65%] hidden lg:block"
+                    className="absolute left-24 top-[65%] hidden lg:block"
                 >
                     <Pointer name="Andrea" />
                 </motion.div>
@@ -90,7 +90,7 @@ export default function Hero() {
                         y: 100,
                     }}
                     drag
-                    className="absolute -right-64 top-32 hidden lg:block"
+                    className="absolute -right-64 top-16 hidden lg:block"
                 >
                     <Image
                         src={designExample2Image}
