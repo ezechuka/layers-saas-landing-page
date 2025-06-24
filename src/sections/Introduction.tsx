@@ -2,8 +2,6 @@
 
 import Tag from "@/components/Tag";
 import {
-    useMotionValue,
-    useMotionValueEvent,
     useScroll,
     useTransform,
 } from "framer-motion";
